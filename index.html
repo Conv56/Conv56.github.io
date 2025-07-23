@@ -1,122 +1,126 @@
-import React from 'react';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reading Journal: The Illegal</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+  <div class="flex">
+    <!-- Sidebar -->
+    <nav class="w-64 bg-white shadow-lg h-screen sticky top-0 p-6">
+      <h1 class="text-2xl font-bold text-indigo-700 mb-6">Reading Journal</h1>
+      <ul class="space-y-4">
+        <li><a href="#entry1" class="hover:text-indigo-600">Entry #1: Why The Illegal?</a></li>
+        <li><a href="#entry2" class="hover:text-indigo-600">Entry #2: Character Development</a></li>
+        <li><a href="#entry3" class="hover:text-indigo-600">Entry #3: Novel Background</a></li>
+        <li><a href="#entry4" class="hover:text-indigo-600">Entry #4: Resilience</a></li>
+        <li><a href="#entry5" class="hover:text-indigo-600">Entry #5: Literary Lenses</a></li>
+        <li><a href="#entry6" class="hover:text-indigo-600">Entry #6: Text-to-Text Connections</a></li>
+        <li><a href="#entry7" class="hover:text-indigo-600">Entry #7: Sentence Starter</a></li>
+        <li><a href="#entry8" class="hover:text-indigo-600">Entry #8: Ending Reflection</a></li>
+        <li><a href="#entry9" class="hover:text-indigo-600">Entry #9: Why Teach</a></li>
+      </ul>
+    </nav>
 
-export default function ReadingJournalSite() {
-  const entries = [
-    {
-      id: 'entry1',
-      title: 'Journal Entry #1: Why The Illegal?',
-      content: <>
+    <!-- Main Content -->
+    <main class="flex-1 p-10">
+      <!-- Entry 1 -->
+      <section id="entry1" class="mb-12 bg-white p-8 rounded-lg shadow">
+        <h2 class="text-3xl font-bold text-indigo-800 mb-4">Journal Entry #1: Why <em>The Illegal</em>?</h2>
         <p>There are quite a few reasons why I chose <em>The Illegal</em> as my book, and the title has to be one of them. “Illegal” is usually a word that’s weaponized in real life, and seeing the word turned into a human story sounds extremely interesting. On top of this, Lawrence Hill is a big name, as I have read his other books like <em>The Book of Negroes</em>. I admire his style of writing, as he is great at handling themes of displacement and resistance.</p>
-        <p><strong>Cover Versions:</strong></p>
-        <ol className="list-decimal pl-6">
-          <li><em>Audiobook</em>: Minimal detail, sparks curiosity: <strong>How does a running man relate to “illegal”?</strong></li>
-          <li><em>Print cover</em>: Man under a spotlight, running on a hill—evokes tension and isolation.</li>
-        </ol>
-        <p>According to summaries I read, the story follows Keita “running” for his life as an undocumented immigrant in Prosper State. With the rise of ICE and anti-immigrant policies, I’m curious whether Keita’s fate will mirror real-world debates on asylum and justice.</p>
-      </>,
-    },
-    {
-      id: 'entry2',
-      title: 'Journal Entry #2: Character Development',
-      content: <>
-        <h3 className="font-semibold">First Third</h3>
-        <p>Keita Ali emerges as a driven youth, obsessive about running. Hiding his “Meb Supremes” in his knapsack shows his ambition and defiance: <q>he was so in love with his Meb Supremes … he had left the house with them hidden in his knapsack</q> (Hill 13). As an adult, winning under an alias brings pride and fear: <q>Worry framed his eyes and furrowed his brow</q> when he sees his photo listed as “Roger Bannister” (Hill 144).</p>
-        <h3 className="font-semibold mt-4">Second Third</h3>
-        <p>In AfricTown, Keita bonds with the community: locals chant <q>Keita Ali, go for gold!</q> and offer oranges—giving him belonging beyond survival: <q>There was no gold to run for… Children stood by the roadside and clapped</q> (Hill 285). Mrs. Beech’s kindness after his collapse—<q>Do you know who you are? … Yes … Keita Ali</q> (Hill 206)—teaches him trust and interdependence.</p>
-        <h3 className="font-semibold mt-4">Final Third</h3>
-        <p>Keita transforms into an agent of change, confronting Minister Calder: <q>Don’t you have something for me?</q> He flees barriers mid-race—<q>He hurdled the barrier and kept running</q> (Hill 322)—illustrating unshakable will to protect loved ones and challenge injustice.</p>
-      </>,
-    },
-    {
-      id: 'entry3',
-      title: 'Journal Entry #3: Novel Background',
-      content: <>
+        <div class="mt-6 p-4 border-l-4 border-indigo-600 bg-indigo-50 rounded">
+          <h3 class="font-semibold">Cover Versions:</h3>
+          <ul class="list-disc list-inside mt-2">
+            <li><strong>Audiobook:</strong> Minimal detail, sparks curiosity—<em>How does a running man relate to “illegal”?</em></li>
+            <li><strong>Print Cover:</strong> Man under a spotlight, running on a hill—evokes tension and isolation.</li>
+          </ul>
+        </div>
+        <p class="mt-4">According to summaries I read, the story follows Keita “running” for his life as an undocumented immigrant in Freedom State. With the rise of ICE and anti-immigrant policies, I’m curious whether Keita’s fate will mirror real-world debates on asylum and justice.</p>
+      </section>
+
+      <!-- Entry 2 -->
+      <section id="entry2" class="mb-12 bg-white p-8 rounded-lg shadow">
+        <h2 class="text-3xl font-bold text-green-800 mb-4">Journal Entry #2: Character Development</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-green-50 p-4 rounded">
+            <h3 class="font-semibold mb-2">First Third</h3>
+            <p>Keita Ali emerges as a driven youth, obsessive about running. Hiding his “Meb Supremes” in his knapsack shows his ambition and defiance: <q>he was so in love with his Meb Supremes … he had left the house with them hidden in his knapsack</q> (Hill 13).</p>
+            <p>As an adult, winning under an alias brings pride and fear: <q>Worry framed his eyes and furrowed his brow</q> when he sees his photo listed as “Roger Bannister” (Hill 144).</p>
+          </div>
+          <div class="bg-green-100 p-4 rounded">
+            <h3 class="font-semibold mb-2">Second Third</h3>
+            <p>In AfricTown, locals chant <q>Keita Ali, go for gold!</q> and offer oranges—giving him belonging beyond survival: <q>There was no gold to run for… Children stood by the roadside and clapped</q> (Hill 285).</p>
+            <p>Mrs. Beech’s kindness after his collapse—<q>Do you know who you are? … Yes … Keita Ali</q> (Hill 206)—teaches him trust and interdependence.</p>
+          </div>
+          <div class="bg-green-200 p-4 rounded">
+            <h3 class="font-semibold mb-2">Final Third</h3>
+            <p>Keita confronts Minister Calder: <q>Don’t you have something for me?</q> He flees barriers mid-race—<q>He hurdled the barrier and kept running</q> (Hill 322)—illustrating unshakable will to protect loved ones and challenge injustice.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Entry 3 -->
+      <section id="entry3" class="mb-12 bg-white p-8 rounded-lg shadow">
+        <h2 class="text-3xl font-bold text-yellow-800 mb-4">Journal Entry #3: Novel Background</h2>
         <p>Lawrence Hill’s parents were civil‑rights activists: his father Daniel Hill led the Ontario Human Rights Commission; his mother Donna Hill fought anti‑discrimination law. Hill’s journalism and volunteer work, plus a childhood dream of Olympic running, shaped <em>The Illegal</em>.</p>
-        <p>Published mid-2010s amid a record refugee crisis—60M displaced (UN 2015)—Hill labels Canada’s refugee system <q>obscene and heartbreaking</q>. Fictional states Zantoroland (dictatorship) and Prosper State (anti-immigrant) mirror Syria/Rwanda and ICE/Australia. AfricTown echoes Africville’s tragic history.</p>
-      </>,
-    },
-    {
-      id: 'entry4',
-      title: 'Journal Entry #4: Resilience',
-      content: <>
-        <p>Keita’s resilience peaks when he confronts dehumanization: <q>I am not asking for mercy, Minister. I am asking for rights. I am not an animal</q> (Hill 376). His refusal to submit reframes resilience as active defiance.</p>
-        <p>Running becomes protest: hurdling barriers and slipping past patrols symbolize resistance to unjust systems. Hill suggests that personal grit, combined with collective solidarity, sparks social change.</p>
-      </>,
-    },
-    {
-      id: 'entry5',
-      title: 'Journal Entry #5: Literary Lenses',
-      content: <>
-        <h3 className="font-semibold">Socio‑Economic Lens</h3>
-        <p>AfricTown’s shipping-container homes—<q>It looked poorer than Zantoroland…</q> (Hill 182)—and Prosper State’s wealth expose capitalism’s role in migrant exploitation.</p>
-        <h3 className="font-semibold mt-2">Psychological Lens</h3>
-        <p>After his father’s kidnapping, Keita rereads Yoyo’s final words—<q>The time has come. Call the marathon agent</q> (Hill 46)—as a coping ritual, illustrating memory’s power amid trauma.</p>
-        <h3 className="font-semibold mt-2">Archetypal Lens</h3>
-        <p>Keita’s quest follows the hero’s journey: call to adventure (Buttersby win), belly of the whale (AfricTown), atonement (Calder showdown).</p>
-      </>,
-    },
-    {
-      id: 'entry6',
-      title: 'Journal Entry #6: Text‑to‑Text Connections',
-      content: <>
-        <h3 className="font-semibold">The Hamilton Mixtape: “Immigrants (We Get the Job Done)”</h3>
-        <p>Miranda’s anthem celebrates immigrant resilience—<em>“We jump over walls or float on rafts / We built you a castle”</em>—mirroring Keita’s flight and rebuild.</p>
-        <h3 className="font-semibold mt-2">Disney’s Encanto (2021)</h3>
-        <p>Abuela Alma’s refugee backstory echoes Keita’s exile: trauma, loss, and the magic of rebuilding community.</p>
-        <h3 className="font-semibold mt-2">Childish Gambino: “This Is America”</h3>
-        <p>Glover’s juxtaposition of dance and violence parallels Hill’s critique of systemic oppression and the need to confront hidden brutality.</p>
-      </>,
-    },
-    {
-      id: 'entry7',
-      title: 'Journal Entry #7: Sentence Starter',
-      content: <>
+        <blockquote class="border-l-4 border-gray-400 pl-4 italic my-4">“obscene and heartbreaking” (Hill – exact page TBD)</blockquote>
+        <p>Published mid‑2010s amid a record refugee crisis—60 million displaced (UN 2015)—Hill’s fictional Zantoroland and Freedom State mirror real‑world Syria/Rwanda and ICE/Australia. AfricTown echoes Africville’s tragic history.</p>
+      </section>
+
+      <!-- Entry 4 -->
+      <section id="entry4" class="mb-12 bg-white p-8 rounded-lg shadow">
+        <h2 class="text-3xl font-bold text-red-800 mb-4">Journal Entry #4: Resilience</h2>
+        <p>Keita’s resilience peaks when he confronts dehumanization: <q>I am not asking for mercy, Minister. I am asking for rights. I am not an animal</q> (Hill 376). His refusal reframes resilience as active defiance.</p>
+        <p>Running becomes protest: hurdling barriers symbolizes resistance to unjust systems. Hill suggests personal grit combined with collective solidarity sparks social change.</p>
+      </section>
+
+      <!-- Entry 5 -->
+      <section id="entry5" class="mb-12 bg-white p-8 rounded-lg shadow">
+        <h2 class="text-3xl font-bold text-purple-800 mb-4">Journal Entry #5: Literary Lenses</h2>
+        <h3 class="font-semibold mb-2">Socio‑Economic Lens</h3>
+        <p>AfricTown’s container homes—<q>It looked poorer than Zantoroland…</q> (Hill 182)—expose capitalism’s role in migrant exploitation.</p>
+        <h3 class="font-semibold mb-2">Psychological Lens</h3>
+        <p>After his father’s kidnapping, Keita rereads Yoyo’s final words—<q>The time has come. Call the marathon agent</q> (Hill 46)—as a coping ritual, showing memory’s power amid trauma.</p>
+        <h3 class="font-semibold mb-2">Archetypal Lens</h3>
+        <p>Keita’s arc follows the hero’s journey: call to adventure (Marathon win), belly of the whale (AfricTown), atonement (Calder showdown).</p>
+      </section>
+
+      <!-- Entry 6 -->
+      <section id="entry6" class="mb-12 bg-white p-8 rounded-lg shadow">
+        <h2 class="text-3xl font-bold text-teal-800 mb-4">Journal Entry #6: Text-to-Text Connections</h2>
+        <h3 class="font-semibold mb-2">The Hamilton Mixtape: “Immigrants (We Get the Job Done)”</h3>
+        <p>Miranda’s anthem—<em>“We jump over walls or float on rafts / We built you a castle”</em>—mirrors Keita’s flight and rebuild.</p>
+        <h3 class="font-semibold mb-2 mt-4">Disney’s Encanto (2021)</h3>
+        <p>Abuela Alma’s refugee backstory echoes Keita’s exile: trauma, loss, and rebuilding community under pressure.</p>
+        <h3 className="font-semibold mb-2 mt-4">Childish Gambino: “This Is America”</h3>
+        <p>Glover’s dance‑and‑violence imagery parallels Hill’s critique of oppression and the need to confront hidden brutality.</p>
+      </section>
+
+      <!-- Entry 7 -->
+      <section id="entry7" class="mb-12 bg-white p-8 rounded-lg shadow">
+        <h2 class="text-3xl font-bold text-indigo-700 mb-4">Journal Entry #7: Sentence Starter</h2>
         <p><strong>“I think the relationship between Keita and Mrs. Ivernia Beech is interesting because…”</strong></p>
-        <p>I think the relationship between Keita and Mrs. Beech is interesting because it reveals that resilience often demands trust. When he awakens on her couch and she asks, <q>Do you know who you are?</q> (Hill 112), he reclaims his name and self‑worth. Her empathy transforms his solitary flight into a shared bond, proving that true strength rests in caring connections.</p>
-      </>,
-    },
-    {
-      id: 'entry8',
-      title: 'Journal Entry #8: Ending Reflection',
-      content: <>
-        <p>I find the ending both triumphant and open‑ended. After Keita’s victory, he realizes <q>he ran not for speed, but for survival</q> (Hill 390). Yet as he eyes a new race, Hill reminds us justice is ongoing. This mirrors real‑world activism: one legal victory sparks the next movement.</p>
-      </>,
-    },
-    {
-      id: 'entry9',
-      title: 'Journal Entry #9: Why It Should Be Taught',
-      content: <>
-        <ol className="list-decimal pl-6">
+        <p>I think their bond shows resilience demands trust. When Mrs. Beech asks, <q>Do you know who you are?</q> (Hill 112), Keita reclaims his name and self-worth, proving strength lies in caring connections.</p>
+      </section>
+
+      <!-- Entry 8 -->
+      <section id="entry8" class="mb-12 bg-white p-8 rounded-lg shadow">
+        <h2 class="text-3xl font-bold text-green-700 mb-4">Journal Entry #8: Ending Reflection</h2>
+        <p>The ending is both triumphant and open-ended. After Keita’s victory, he realizes <q>he ran not for speed, but for survival</q> (Hill 390). Yet eyeing a new race, Hill reminds us justice is ongoing—one victory sparks the next movement.</p>
+      </section>
+
+      <!-- Entry 9 -->
+      <section id="entry9" class="mb-12 bg-white p-8 rounded-lg shadow">
+        <h2 class="text-3xl font-bold text-yellow-700 mb-4">Journal Entry #9: Why Teach <em>The Illegal</em></h2>
+        <ol class="list-decimal list-inside space-y-2">
           <li><strong>Humanizes Refugees:</strong> Transforms statistics into Keita’s lived story.</li>
           <li><strong>Prompts Critical Discussion:</strong> Sharp critiques of dehumanizing language and policies.</li>
           <li><strong>Models Resilience:</strong> Demonstrates moral courage and the spark for social change.</li>
         </ol>
-      </>,
-    },
-  ];
-
-  return (
-    <div className="min-h-screen flex">
-      <nav className="w-1/4 bg-gray-100 p-4 sticky top-0 h-screen">
-        <h2 className="text-xl font-bold mb-4">Reading Journal</h2>
-        <ul className="space-y-2">
-          {entries.map(e => (
-            <li key={e.id}>
-              <a href={`#${e.id}`} className="text-blue-600 hover:underline">
-                {e.title}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
-      <main className="w-3/4 p-8 space-y-12">
-        {entries.map(e => (
-          <section id={e.id} key={e.id} className="prose">
-            <h2 className="text-2xl font-bold mb-2">{e.title}</h2>
-            {e.content}
-          </section>
-        ))}
-      </main>
-    </div>
-  );
-}
+      </section>
+    </main>
+  </div>
+</body>
+</html>
