@@ -5,44 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reading Journal: The Illegal</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    .cover-img { max-width: 45%; }
+    .entry-img { max-width: 100%; height: auto; margin: 1rem 0; border-radius: 0.5rem; }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+<body class="bg-gray-900 text-gray-100 font-sans leading-relaxed">
+  <!-- Background Audio -->
+  <audio id="bg-audio" src="https://example.com/immigrants-theme.mp3" autoplay loop></audio>
+
+  <!-- Header -->
+  <header class="w-full bg-cover bg-center h-64" style="background-image:url('https://source.unsplash.com/1600x900/?running,road')">
+    <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+      <h1 class="text-5xl font-extrabold text-white drop-shadow-lg">Reading Journal: <em>The Illegal</em></h1>
+    </div>
+  </header>
+
   <div class="flex">
     <!-- Sidebar -->
-    <nav class="w-64 bg-white shadow-lg h-screen sticky top-0 p-6">
-      <h1 class="text-2xl font-bold text-indigo-700 mb-6">Reading Journal</h1>
-      <ul class="space-y-4">
-        <li><a href="#entry1" class="hover:text-indigo-600">Entry #1: Why The Illegal?</a></li>
-        <li><a href="#entry2" class="hover:text-indigo-600">Entry #2: Character Development</a></li>
-        <li><a href="#entry3" class="hover:text-indigo-600">Entry #3: Novel Background</a></li>
-        <li><a href="#entry4" class="hover:text-indigo-600">Entry #4: Resilience</a></li>
-        <li><a href="#entry5" class="hover:text-indigo-600">Entry #5: Literary Lenses</a></li>
-        <li><a href="#entry6" class="hover:text-indigo-600">Entry #6: Text-to-Text Connections</a></li>
-        <li><a href="#entry7" class="hover:text-indigo-600">Entry #7: Sentence Starter</a></li>
-        <li><a href="#entry8" class="hover:text-indigo-600">Entry #8: Ending Reflection</a></li>
-        <li><a href="#entry9" class="hover:text-indigo-600">Entry #9: Why Teach</a></li>
+    <nav class="w-64 bg-gray-800 shadow-lg h-screen sticky top-0 p-6 overflow-auto">
+      <h2 class="text-xl font-bold text-indigo-400 mb-6">Entries</h2>
+      <ul class="space-y-3">
+        <li><a href="#entry1" class="hover:text-indigo-300">Entry #1: Why The Illegal?</a></li>
+        <li><a href="#entry2" class="hover:text-green-300">Entry #2: Character Development</a></li>
+        <li><a href="#entry3" class="hover:text-yellow-300">Entry #3: Novel Background</a></li>
+        <li><a href="#entry4" class="hover:text-red-300">Entry #4: Resilience</a></li>
+        <li><a href="#entry5" class="hover:text-purple-300">Entry #5: Literary Lenses</a></li>
+        <li><a href="#entry6" class="hover:text-teal-300">Entry #6: Text-to-Text Connections</a></li>
+        <li><a href="#entry7" class="hover:text-indigo-300">Entry #7: Sentence Starter</a></li>
+        <li><a href="#entry8" class="hover:text-green-300">Entry #8: Ending Reflection</a></li>
+        <li><a href="#entry9" class="hover:text-yellow-300">Entry #9: Why Teach</a></li>
       </ul>
+      <button onclick="toggleAudio()" class="mt-6 px-4 py-2 bg-indigo-600 rounded hover:bg-indigo-500">🔊 Toggle Music</button>
     </nav>
 
     <!-- Main Content -->
-    <main class="flex-1 p-10">
+    <main class="flex-1 p-10 overflow-auto space-y-16">
       <!-- Entry 1 -->
-      <section id="entry1" class="mb-12 bg-white p-8 rounded-lg shadow">
-        <h2 class="text-3xl font-bold text-indigo-800 mb-4">Journal Entry #1: Why <em>The Illegal</em>?</h2>
-        <p>There are quite a few reasons why I chose “The Illegal” as my book, and the title has to be one of them. “Illegal” is usually a word that’s weaponized in real life, and seeing the word turned into a human story sounds extremely interesting. On top of this, Lawrence Hill is a big name, as I have read his other books like “The Book of Negroes”. I admire his style of writing, as he is great at handling themes of displacement and resistance.</p>
-        <div class="mt-6 p-4 border-l-4 border-indigo-600 bg-indigo-50 rounded">
-          <h3 class="font-semibold">Cover Versions:</h3>
-          <ul class="list-disc list-inside mt-2">
-            <li><strong>Audiobook:</strong> Minimal detail, sparks curiosity—<em>How does a running man relate to “illegal”?</em></li>
-            <li><strong>Print Cover:</strong> Man under a spotlight, running on a hill—evokes tension and isolation.</li>
-          </ul>
+      <section id="entry1" class="bg-gray-800 p-8 rounded-lg shadow-lg">
+        <h2 class="text-4xl font-bold text-indigo-300 mb-6">Journal Entry #1: Why <em>The Illegal</em>?</h2>
+        <div class="flex justify-between mb-6">
+          <figure class="cover-img">
+            <img src="/images/illegal-audiobook.jpg" alt="The Illegal Audiobook Cover" class="entry-img" />
+            <figcaption class="text-sm text-gray-400">Audiobook Cover</figcaption>
+          </figure>
+          <figure class="cover-img">
+            <img src="/images/illegal-print.jpg" alt="The Illegal Print Cover" class="entry-img" />
+            <figcaption class="text-sm text-gray-400">Print Cover</figcaption>
+          </figure>
         </div>
-        <p class="mt-4">By reading some summaries, I have come to know a little more about the book. The story is about Keita “running” for his life, as he leaves his country for “Freedom State” as an undocumented immigrant. After reading the summary, it almost reassured me that this is the book that I want to read, simply because it greatly relates to the world right now, with the U.S. establishing the ICE (Immigration and Customs Enforcement) to clean out all illegal immigrants, I am very curious to see if the ending of Keita will be similar to what is going to happen in the U.S.</p>
+        <p>There are quite a few reasons why I chose <em>The Illegal</em> as my book, and the title has to be one of them. “Illegal” is usually a word that’s weaponized in real life, and seeing it turned into a human story sounds extremely interesting. On top of this, Lawrence Hill is a big name, as I have read his other books like <em>The Book of Negroes</em>. I admire his handling of displacement and resistance themes. By reading some summaries, I have come to know a little more about the book. The story is about Keita “running” for his life, as he leaves his country for “Freedom State” as an undocumented immigrant. After reading the summary, it almost reassured me that this is the book that I want to read, simply because it greatly relates to the world right now, with the U.S. establishing the ICE (Immigration and Customs Enforcement) to clean out all illegal immigrants, I am very curious to see if the ending of Keita will be similar to what is going to happen in the U.S.</p>
       </section>
 
       <!-- Entry 2 -->
-      <section id="entry2" class="mb-12 bg-white p-8 rounded-lg shadow">
-        <h2 class="text-3xl font-bold text-green-800 mb-4">Journal Entry #2: Character Development</h2>
+      <section id="entry2" class="bg-gray-800 p-8 rounded-lg shadow-lg">
+        <h2 class="text-4xl font-bold text-green-300 mb-6">Journal Entry #2: Character Development</h2>
+        <img src="https://source.unsplash.com/800x300/?marathon,runner" alt="Runner Training" class="entry-img" />
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="bg-green-50 p-4 rounded">
             <h3 class="font-semibold mb-2">First Third</h3>
@@ -62,59 +81,77 @@
       </section>
 
       <!-- Entry 3 -->
-      <section id="entry3" class="mb-12 bg-white p-8 rounded-lg shadow">
-        <h2 class="text-3xl font-bold text-yellow-800 mb-4">Journal Entry #3: Novel Background</h2>
+      <section id="entry3" class="bg-gray-800 p-8 rounded-lg shadow-lg">
+        <h2 class="text-4xl font-bold text-yellow-300 mb-6">Journal Entry #3: Novel Background</h2>
+        <img src="https://source.unsplash.com/800x300/?history,civil-rights" alt="Human Rights Archives" class="entry-img" />
         <p>Lawrence Hill’s parents were civil‑rights activists: his father Daniel Hill led the Ontario Human Rights Commission; his mother Donna Hill fought anti‑discrimination law. Hill’s journalism and volunteer work, plus a childhood dream of Olympic running, shaped <em>The Illegal</em>.</p>
-        <blockquote class="border-l-4 border-gray-400 pl-4 italic my-4">“obscene and heartbreaking” (Hill – exact page TBD)</blockquote>
-        <p>Published mid‑2010s amid a record refugee crisis—60 million displaced (UN 2015)—Hill’s fictional Zantoroland and Freedom State mirror real‑world Syria/Rwanda and ICE/Australia. AfricTown echoes Africville’s tragic history.</p>
+        <blockquote class="border-l-4 border-gray-400 pl-4 italic my-4">“obscene and heartbreaking” (Hill — exact page TBD)</blockquote>
+        <p>Published mid‑2010s amid a record refugee crisis—60 million displaced (UN 2015)—Hill’s fictional Zantoroland and Freedom State mirror real‑world Syria/Rwanda and ICE/Australia. AfricTown echoes Africville’s tragic history.</p>
       </section>
 
       <!-- Entry 4 -->
-      <section id="entry4" class="mb-12 bg-white p-8 rounded-lg shadow">
-        <h2 class="text-3xl font-bold text-red-800 mb-4">Journal Entry #4: Resilience</h2>
-        <p>Keita’s resilience peaks when he confronts dehumanization: <q>I am not asking for mercy, Minister. I am asking for rights. I am not an animal</q> (Hill 376). His refusal reframes resilience as active defiance.</p>
+      <section id="entry4" class="bg-gray-800 p-8 rounded-lg shadow-lg">
+        <h2 class="text-4xl font-bold text-red-300 mb-6">Journal Entry #4: Resilience</h2>
+        <img src="https://source.unsplash.com/800x300/?strength,resilience" alt="Resilience Concept" class="entry-img" />
+        <p>Keita’s resilience peaks when he confronts dehumanization: <q>I am not asking for mercy, Minister. I am asking for rights. I am not an animal</q> (Hill 376). His refusal reframes resilience as active defiance.</p>
         <p>Running becomes protest: hurdling barriers symbolizes resistance to unjust systems. Hill suggests personal grit combined with collective solidarity sparks social change.</p>
       </section>
 
       <!-- Entry 5 -->
-      <section id="entry5" class="mb-12 bg-white p-8 rounded-lg shadow">
-        <h2 class="text-3xl font-bold text-purple-800 mb-4">Journal Entry #5: Literary Lenses</h2>
-        <h3 class="font-semibold mb-2">Socio‑Economic Lens</h3>
-        <p>AfricTown’s container homes—<q>It looked poorer than Zantoroland…</q> (Hill 182)—expose capitalism’s role in migrant exploitation.</p>
-        <h3 class="font-semibold mb-2">Psychological Lens</h3>
-        <p>After his father’s kidnapping, Keita rereads Yoyo’s final words—<q>The time has come. Call the marathon agent</q> (Hill 46)—as a coping ritual, showing memory’s power amid trauma.</p>
-        <h3 class="font-semibold mb-2">Archetypal Lens</h3>
-        <p>Keita’s arc follows the hero’s journey: call to adventure (Marathon win), belly of the whale (AfricTown), atonement (Calder showdown).</p>
+      <section id="entry5" class="bg-gray-800 p-8 rounded-lg shadow-lg">
+        <h2 class="text-4xl font-bold text-purple-300 mb-6">Journal Entry #5: Literary Lenses</h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="font-semibold mb-2">Socio‑Economic Lens</h3>
+            <p>AfricTown’s container homes—<q>It looked poorer than Zantoroland…</q> (Hill 182)—expose capitalism’s role in migrant exploitation.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Psychological Lens</h3>
+            <p>After his father’s kidnapping, Keita rereads Yoyo’s final words—<q>The time has come. Call the marathon agent</q> (Hill 46)—as a coping ritual, showing memory’s power amid trauma.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Archetypal Lens</h3>
+            <p>Keita’s arc follows the hero’s journey: call to adventure (Marathon win), belly of the whale (AfricTown), atonement (Calder showdown).</p>
+          </div>
+        </div>
       </section>
 
       <!-- Entry 6 -->
-      <section id="entry6" class="mb-12 bg-white p-8 rounded-lg shadow">
-        <h2 class="text-3xl font-bold text-teal-800 mb-4">Journal Entry #6: Text-to-Text Connections</h2>
-        <h3 class="font-semibold mb-2">The Hamilton Mixtape: “Immigrants (We Get the Job Done)”</h3>
-        <p>Miranda’s anthem—<em>“We jump over walls or float on rafts / We built you a castle”</em>—mirrors Keita’s flight and rebuild.</p>
-        <h3 class="font-semibold mb-2 mt-4">Disney’s Encanto (2021)</h3>
-        <p>Abuela Alma’s refugee backstory echoes Keita’s exile: trauma, loss, and rebuilding community under pressure.</p>
-        <h3 className="font-semibold mb-2 mt-4">Childish Gambino: “This Is America”</h3>
-        <p>Glover’s dance‑and‑violence imagery parallels Hill’s critique of oppression and the need to confront hidden brutality.</p>
+      <section id="entry6" class="bg-gray-800 p-8 rounded-lg shadow-lg">
+        <h2 class="text-4xl font-bold text-teal-300 mb-6">Journal Entry #6: Text-to-Text Connections</h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="font-semibold mb-2">The Hamilton Mixtape: “Immigrants (We Get the Job Done)”</h3>
+            <p>Miranda’s anthem—<em>“We jump over walls or float on rafts / We built you a castle”</em>—mirrors Keita’s flight and rebuild.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Disney’s Encanto (2021)</h3>
+            <p>Abuela Alma’s refugee backstory echoes Keita’s exile: trauma, loss, and rebuilding community under pressure.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Childish Gambino: “This Is America”</h3>
+            <p>Glover’s dance‑and‑violence imagery parallels Hill’s critique of oppression and the need to confront hidden brutality.</p>
+          </div>
+        </div>
       </section>
 
       <!-- Entry 7 -->
-      <section id="entry7" class="mb-12 bg-white p-8 rounded-lg shadow">
-        <h2 class="text-3xl font-bold text-indigo-700 mb-4">Journal Entry #7: Sentence Starter</h2>
+      <section id="entry7" class="bg-gray-800 p-8 rounded-lg shadow-lg">
+        <h2 class="text-4xl font-bold text-indigo-300 mb-6">Journal Entry #7: Sentence Starter</h2>
         <p><strong>“I think the relationship between Keita and Mrs. Ivernia Beech is interesting because…”</strong></p>
-        <p>I think their bond shows resilience demands trust. When Mrs. Beech asks, <q>Do you know who you are?</q> (Hill 112), Keita reclaims his name and self-worth, proving strength lies in caring connections.</p>
+        <p>I think their bond shows resilience demands trust. When Mrs. Beech asks, <q>Do you know who you are?</q> (Hill 112), Keita reclaims his name and self-worth, proving strength lies in caring connections.</p>
       </section>
 
       <!-- Entry 8 -->
-      <section id="entry8" class="mb-12 bg-white p-8 rounded-lg shadow">
-        <h2 class="text-3xl font-bold text-green-700 mb-4">Journal Entry #8: Ending Reflection</h2>
-        <p>The ending is both triumphant and open-ended. After Keita’s victory, he realizes <q>he ran not for speed, but for survival</q> (Hill 390). Yet eyeing a new race, Hill reminds us justice is ongoing—one victory sparks the next movement.</p>
+      <section id="entry8" class="bg-gray-800 p-8 rounded-lg shadow-lg">
+        <h2 class="text-4xl font-bold text-green-300 mb-6">Journal Entry #8: Ending Reflection</h2>
+        <p>The ending is both triumphant and open-ended. After Keita’s victory, he realizes <q>he ran not for speed, but for survival</q> (Hill 390). Yet eyeing a new race, Hill reminds us justice is ongoing—one victory sparks the next movement.</p>
       </section>
 
       <!-- Entry 9 -->
-      <section id="entry9" class="mb-12 bg-white p-8 rounded-lg shadow">
-        <h2 class="text-3xl font-bold text-yellow-700 mb-4">Journal Entry #9: Why Teach <em>The Illegal</em></h2>
-        <ol class="list-decimal list-inside space-y-2">
+      <section id="entry9" class="bg-gray-800 p-8 rounded-lg shadow-lg">
+        <h2 class="text-4xl font-bold text-yellow-300 mb-6">Journal Entry #9: Why Teach <em>The Illegal</em></h2>
+        <ol class="list-decimal list-inside space-y-3">
           <li><strong>Humanizes Refugees:</strong> Transforms statistics into Keita’s lived story.</li>
           <li><strong>Prompts Critical Discussion:</strong> Sharp critiques of dehumanizing language and policies.</li>
           <li><strong>Models Resilience:</strong> Demonstrates moral courage and the spark for social change.</li>
@@ -122,5 +159,18 @@
       </section>
     </main>
   </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-gray-800 text-gray-400">
+    <p>© 2025 Reading Journal Presentation</p>
+    <iframe width="300" height="169" src="https://www.youtube.com/embed/ZyCFijX064U?autoplay=1&loop=1&playlist=ZyCFijX064U" title="Theme Song" frameborder="0" allow="autoplay; encrypted-media" class="mx-auto mt-4 rounded shadow-lg"></iframe>
+  </footer>
+
+  <script>
+    function toggleAudio() {
+      const audio = document.getElementById('bg-audio');
+      audio.paused ? audio.play() : audio.pause();
+    }
+  </script>
 </body>
 </html>
