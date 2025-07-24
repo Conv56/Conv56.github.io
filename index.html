@@ -184,10 +184,23 @@
   </footer>
 
   <script>
+    const audio = document.getElementById("bg-audio");
+
     function toggleAudio() {
-      const audio = document.getElementById('bg-audio');
-      audio.paused ? audio.play() : audio.pause();
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
     }
+
+    document.addEventListener("click", () => {
+      if (audio.paused) {
+        audio.play().catch(() => {
+          console.log("Autoplay blocked until user interaction.");
+        });
+      }
+    }, { once: true });
   </script>
 </body>
 </html>
